@@ -28,9 +28,12 @@
    * test_load_enc_int.sh        测试flkcdp加密所有int字段的加载性能
    * test_load_enc_float.sh      测试flkcdp加密所有float字段的加载性能
    * test_load_enc_string.sh     测试flkcdp加密所有string字段的加载性能
+   * report.sh                   自动输出flkcdp各种加密情况的对照报告
 3. tpmc_enc_no测试tpmc性能，比flkcdp和mysql不加密的性能
    * tpmc_enc_no_flkcdp.sh 测试不加密的情况下，flkcdp的tpmc指标
-   * tpmc_enc_no_mysql.sh  测试不加密的情况下，mysql的tpmc指标 
+   * tpmc_enc_no_mysql.sh  测试不加密的情况下，mysql的tpmc指标
+   > 测试tpmc的脚本，执行过程中会弹出对话框，选择参数（比如并发的线程个数，也就是terminal，以及测试时间）
+   > 因此，必须在linux主机上执行脚本测试，下面的tpmc测试，情况相同
 4. tpmc_enc测试tpmc性能，对比flkdp在各种加密情况下的性能
    * tpmc_enc_no.sh         测试不加密的情况下，flkcdp的tpmc指标
    * tpmc_enc_int_one.sh    测试加密一个int字段的情况下，flkcdp的tpmc指标
